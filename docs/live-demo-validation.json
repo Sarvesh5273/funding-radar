@@ -1,0 +1,439 @@
+{
+  "checkedAt": "2026-11-17T13:32:43.069Z",
+  "pass": true,
+  "checks": [
+    {
+      "example": "support-ai",
+      "runId": "95a243df-f62f-4f1c-9957-a833f0bfbef4",
+      "completedAt": "2026-11-17T13:29:09.244Z",
+      "datasetId": "1f594b0a-ea09-4c0e-b31a-0bdfb7b80485",
+      "companies": 14,
+      "investmentEdges": 38,
+      "investors": 12,
+      "endpoints": [
+        "TinySet",
+        "Fetch",
+        "Agent",
+        "Search",
+        "Browser"
+      ],
+      "endpointEvidence": [
+        {
+          "endpoint": "TinySet",
+          "successfulEvents": 1,
+          "resourceIds": [
+            "1f594b0a-ea09-4c0e-b31a-0bdfb7b80485"
+          ],
+          "example": {
+            "id": "fee59acc-3265-485e-92ed-a4ca4ed3340f",
+            "endpoint": "TinySet",
+            "operation": "create-dataset",
+            "startedAt": "2026-11-17T11:03:37.676Z",
+            "status": "success",
+            "units": 24,
+            "detail": "TinySet ready; 24 rows discovered",
+            "resourceId": "1f594b0a-ea09-4c0e-b31a-0bdfb7b80485",
+            "finishedAt": "2026-11-17T11:26:45.527Z",
+            "durationMs": 1387851
+          }
+        },
+        {
+          "endpoint": "Fetch",
+          "successfulEvents": 105,
+          "resourceIds": [],
+          "example": {
+            "id": "2d415371-b957-4e28-b119-6da6122e60aa",
+            "endpoint": "Fetch",
+            "operation": "fetch-pages",
+            "startedAt": "2026-11-17T11:14:05.556Z",
+            "status": "success",
+            "units": 8,
+            "detail": "6/8 pages read; 2 failed",
+            "finishedAt": "2026-11-17T11:14:10.994Z",
+            "durationMs": 5438
+          }
+        },
+        {
+          "endpoint": "Agent",
+          "successfulEvents": 10,
+          "resourceIds": [
+            "39797bd3-a969-42ea-89e5-e7c44a546467",
+            "8b1d5f84-ac88-40d4-b39c-9ed132b7c6ff",
+            "17775a87-b1ac-42b4-bae8-d7dcc11bb32c",
+            "56203909-a8fc-4f1c-9c50-74f92e7eb8e1",
+            "fe946e0f-9be1-4b47-a114-d3323d1ce84c",
+            "67b1fd03-67a3-49af-8a6c-7c6fbee7d184",
+            "24223811-9c2c-4c7d-90bd-e112e28eb403",
+            "d51a0f0c-e279-442f-bd28-268c1dc89110",
+            "d96c2a0f-161a-4cf7-a389-f5025bc337ae",
+            "51886904-013a-4ccf-aab5-e436376235c9"
+          ],
+          "example": {
+            "id": "57cc70ab-5f5c-4573-a33c-b934dac8f3a8",
+            "endpoint": "Agent",
+            "operation": "public-evidence-extraction",
+            "startedAt": "2026-11-17T11:14:29.550Z",
+            "status": "success",
+            "units": 4,
+            "detail": "Public evidence extraction completed in 4 browser steps",
+            "finishedAt": "2026-11-17T11:15:05.755Z",
+            "durationMs": 36205,
+            "resourceId": "39797bd3-a969-42ea-89e5-e7c44a546467"
+          }
+        },
+        {
+          "endpoint": "Search",
+          "successfulEvents": 102,
+          "resourceIds": [],
+          "example": {
+            "id": "3f78f047-8e2c-43b6-b396-7d2c8e122373",
+            "endpoint": "Search",
+            "operation": "search",
+            "startedAt": "2026-11-17T11:27:15.243Z",
+            "status": "success",
+            "units": 1,
+            "detail": "\"Y Combinator\" venture capital official investment cheque check size stages submit pitch · 10 source candidates",
+            "finishedAt": "2026-11-17T11:27:18.916Z",
+            "durationMs": 3673
+          }
+        },
+        {
+          "endpoint": "Browser",
+          "successfulEvents": 2,
+          "resourceIds": [
+            "tf-aa56c340-0147-4a0e-bce1-ad14e48f7736",
+            "tf-e11c1892-d5d9-4961-80da-50cb57781ba4"
+          ],
+          "example": {
+            "id": "6ce3e9b6-b03d-42ba-8b0a-f7d0fa1c7c8e",
+            "endpoint": "Browser",
+            "operation": "verify-intake",
+            "startedAt": "2026-11-17T11:59:08.998Z",
+            "status": "success",
+            "units": 1,
+            "detail": "Bonfire Ventures: inspected rendered startup application; 3 visible fields (Enter your email, THE BONFIRE SIGNAL Monthly. What we're seeing from inside founder conversations., THE QUARTERLY Every )",
+            "resourceId": "tf-aa56c340-0147-4a0e-bce1-ad14e48f7736",
+            "finishedAt": "2026-11-17T11:59:25.155Z",
+            "durationMs": 16157
+          }
+        }
+      ],
+      "verifiedPublicForms": 0,
+      "verifiedPublicDestinations": 1,
+      "verifiedPublicApplicationDestinations": 0,
+      "verifiedDirectContactDestinations": 1,
+      "verifiedLoginDestinations": 1,
+      "verifiedSharedInboxes": 1,
+      "investorPublishedIntroRoutes": 0,
+      "suggestedIntroRoutes": 11,
+      "confirmedRoundLeads": 1,
+      "listedCompanyLeads": 1,
+      "sourcedChequeRanges": 1,
+      "investorsWithoutNamedRoundLead": 11,
+      "unknownCheques": 11,
+      "eligibilitySupported": 12,
+      "eligibilityUnconfirmed": 0,
+      "sourceReplay": {
+        "available": true,
+        "checkedCompanies": 14,
+        "verifiedInvestmentEdges": 38,
+        "failures": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "example": "india-fintech",
+      "runId": "730e8414-6b9e-4ff6-b4d2-b8ec851dadcc",
+      "completedAt": "2026-11-17T13:29:09.236Z",
+      "datasetId": "7d421eac-4734-4705-920c-e83d07535300",
+      "companies": 12,
+      "investmentEdges": 34,
+      "investors": 12,
+      "endpoints": [
+        "TinySet",
+        "Fetch",
+        "Agent",
+        "Search",
+        "Browser"
+      ],
+      "endpointEvidence": [
+        {
+          "endpoint": "TinySet",
+          "successfulEvents": 1,
+          "resourceIds": [
+            "7d421eac-4734-4705-920c-e83d07535300"
+          ],
+          "example": {
+            "id": "5b709841-9f03-4ce2-9b26-fbfe3bf28ca8",
+            "endpoint": "TinySet",
+            "operation": "create-dataset",
+            "startedAt": "2026-11-17T11:03:39.293Z",
+            "status": "success",
+            "units": 24,
+            "detail": "TinySet ready; 24 rows discovered",
+            "resourceId": "7d421eac-4734-4705-920c-e83d07535300",
+            "finishedAt": "2026-11-17T11:25:39.580Z",
+            "durationMs": 1320287
+          }
+        },
+        {
+          "endpoint": "Fetch",
+          "successfulEvents": 114,
+          "resourceIds": [],
+          "example": {
+            "id": "823b7222-f09f-4324-ab41-c92a7cb9c1a3",
+            "endpoint": "Fetch",
+            "operation": "fetch-pages",
+            "startedAt": "2026-11-17T11:14:05.567Z",
+            "status": "success",
+            "units": 8,
+            "detail": "8/8 pages read; 0 failed",
+            "finishedAt": "2026-11-17T11:14:08.958Z",
+            "durationMs": 3391
+          }
+        },
+        {
+          "endpoint": "Agent",
+          "successfulEvents": 10,
+          "resourceIds": [
+            "fa7fcaac-3826-4ff3-802a-fd9dedbe3ce9",
+            "f6c64d5f-cf42-4d4a-a4c1-e2a6774d7e7f",
+            "69025554-0252-4369-baab-b5106c4fe719",
+            "f8a4e9ba-e2ae-4cad-91d0-77bc1a7ddeba",
+            "2812a9d5-d692-477a-bddb-33c4f6722a84",
+            "ce24d181-dd68-497c-935c-cf526f2f43df",
+            "2680bcad-51ff-4bc5-81d6-88ac63922163",
+            "08fc38fb-b274-4e29-af4c-0413999c096b",
+            "ff405a2d-db28-4bbf-8654-41502c4b60ba",
+            "f4e45d86-41f3-4727-a2b6-c480783f4001"
+          ],
+          "example": {
+            "id": "5de8e46d-3309-4cf6-b7c9-e554e711a554",
+            "endpoint": "Agent",
+            "operation": "public-evidence-extraction",
+            "startedAt": "2026-11-17T11:14:28.910Z",
+            "status": "success",
+            "units": 5,
+            "detail": "Public evidence extraction completed in 5 browser steps",
+            "finishedAt": "2026-11-17T11:15:37.287Z",
+            "durationMs": 68377,
+            "resourceId": "fa7fcaac-3826-4ff3-802a-fd9dedbe3ce9"
+          }
+        },
+        {
+          "endpoint": "Search",
+          "successfulEvents": 100,
+          "resourceIds": [],
+          "example": {
+            "id": "f6e56b6c-0633-4aed-adc3-443e1cf0a167",
+            "endpoint": "Search",
+            "operation": "search",
+            "startedAt": "2026-11-17T11:26:05.074Z",
+            "status": "success",
+            "units": 1,
+            "detail": "\"Antler\" venture capital official investment cheque check size stages submit pitch · 10 source candidates",
+            "finishedAt": "2026-11-17T11:26:07.232Z",
+            "durationMs": 2158
+          }
+        },
+        {
+          "endpoint": "Browser",
+          "successfulEvents": 8,
+          "resourceIds": [
+            "tf-bafc6f61-b98c-4da1-a53c-c25dc404fc94",
+            "tf-7550a223-6561-48cd-89e0-02f917d49bc8",
+            "tf-c72940aa-422e-4811-89ad-d23a07044102",
+            "tf-aac4253a-e084-4fe6-aa5a-9f458eab7085",
+            "tf-72f777d1-d320-49c4-bbc0-1cdc6e5d4bbe",
+            "tf-5a0d20de-dc13-411b-82cf-12a4ad274848",
+            "tf-4cda6cf5-074c-44c6-b780-db428c9d68cf",
+            "tf-219f71d8-a58d-45a6-ba7c-587e859aa721"
+          ],
+          "example": {
+            "id": "fa7e1ffc-5ddf-48b9-891f-26402b2a3c51",
+            "endpoint": "Browser",
+            "operation": "verify-intake",
+            "startedAt": "2026-11-17T11:41:52.482Z",
+            "status": "success",
+            "units": 1,
+            "detail": "Neon Fund: inspected rendered public contact page; 1 visible fields (Enter your email ID)",
+            "resourceId": "tf-bafc6f61-b98c-4da1-a53c-c25dc404fc94",
+            "finishedAt": "2026-11-17T11:42:10.106Z",
+            "durationMs": 17624
+          }
+        }
+      ],
+      "verifiedPublicForms": 0,
+      "verifiedPublicDestinations": 2,
+      "verifiedPublicApplicationDestinations": 1,
+      "verifiedDirectContactDestinations": 1,
+      "verifiedLoginDestinations": 0,
+      "verifiedSharedInboxes": 1,
+      "investorPublishedIntroRoutes": 1,
+      "suggestedIntroRoutes": 10,
+      "confirmedRoundLeads": 0,
+      "listedCompanyLeads": 1,
+      "sourcedChequeRanges": 2,
+      "investorsWithoutNamedRoundLead": 12,
+      "unknownCheques": 10,
+      "eligibilitySupported": 4,
+      "eligibilityUnconfirmed": 8,
+      "sourceReplay": {
+        "available": true,
+        "checkedCompanies": 12,
+        "verifiedInvestmentEdges": 34,
+        "failures": []
+      },
+      "pass": true,
+      "failures": []
+    },
+    {
+      "example": "battery-climate",
+      "runId": "6220057b-e49c-40a4-8db4-86a060bc07be",
+      "completedAt": "2026-11-17T13:29:09.230Z",
+      "datasetId": "14ad482d-98e3-48c1-aab7-c086df39937f",
+      "companies": 10,
+      "investmentEdges": 36,
+      "investors": 12,
+      "endpoints": [
+        "TinySet",
+        "Fetch",
+        "Agent",
+        "Search",
+        "Browser"
+      ],
+      "endpointEvidence": [
+        {
+          "endpoint": "TinySet",
+          "successfulEvents": 1,
+          "resourceIds": [
+            "14ad482d-98e3-48c1-aab7-c086df39937f"
+          ],
+          "example": {
+            "id": "c9c69608-2a09-470d-aab1-a62456699176",
+            "endpoint": "TinySet",
+            "operation": "create-dataset",
+            "startedAt": "2026-11-17T11:03:39.980Z",
+            "status": "success",
+            "units": 24,
+            "detail": "TinySet ready; 20 rows discovered",
+            "resourceId": "14ad482d-98e3-48c1-aab7-c086df39937f",
+            "finishedAt": "2026-11-17T11:25:40.163Z",
+            "durationMs": 1320183
+          }
+        },
+        {
+          "endpoint": "Fetch",
+          "successfulEvents": 94,
+          "resourceIds": [],
+          "example": {
+            "id": "17a0f364-588b-4c47-a640-160427200f1b",
+            "endpoint": "Fetch",
+            "operation": "fetch-pages",
+            "startedAt": "2026-11-17T11:14:05.415Z",
+            "status": "success",
+            "units": 8,
+            "detail": "8/8 pages read; 0 failed",
+            "finishedAt": "2026-11-17T11:14:14.502Z",
+            "durationMs": 9087
+          }
+        },
+        {
+          "endpoint": "Agent",
+          "successfulEvents": 13,
+          "resourceIds": [
+            "bd399c1d-7270-4f03-8df5-779c0ed030a9",
+            "6996a5e7-7c0f-4156-97c8-b9518bfc9a0b",
+            "e80e2444-557f-4d0c-81f5-813f06d17a6f",
+            "9af2e28e-9147-4a58-b6ee-3fc7592dae9d",
+            "94d4ca45-34e1-4e0f-bd60-a87a80a4142f",
+            "2311ad42-e7e7-4354-ad7f-bcd4f12fc06c",
+            "d011a1f1-85e6-4d3f-ba4f-f1b36ee36f60",
+            "e075aa1e-a92a-4a71-b3c0-c0265da8a6e4",
+            "cac8427c-753c-4f43-a3c8-0b114cadb518",
+            "5868119d-82e7-4d27-a0cd-954877ef1c46",
+            "c3d190f1-6763-4e71-94e0-59974f8f5c0b",
+            "c8f32a45-bb1e-4c4a-8358-ee402d3e1909",
+            "50d8fae0-d64c-4c4e-bc92-0f449b4a1ef0"
+          ],
+          "example": {
+            "id": "9aad16d9-045f-4460-ab86-f1f7b30bd18d",
+            "endpoint": "Agent",
+            "operation": "public-evidence-extraction",
+            "startedAt": "2026-11-17T11:15:05.756Z",
+            "status": "success",
+            "units": 3,
+            "detail": "Public evidence extraction completed in 3 browser steps",
+            "finishedAt": "2026-11-17T11:36:13.379Z",
+            "durationMs": 1267623,
+            "resourceId": "bd399c1d-7270-4f03-8df5-779c0ed030a9"
+          }
+        },
+        {
+          "endpoint": "Search",
+          "successfulEvents": 105,
+          "resourceIds": [],
+          "example": {
+            "id": "50e550f2-db60-4272-aff2-f51681bf82c8",
+            "endpoint": "Search",
+            "operation": "search",
+            "startedAt": "2026-11-17T11:34:55.989Z",
+            "status": "success",
+            "units": 1,
+            "detail": "\"Mecaware\" raised funding round European Innovation Council · 10 source candidates",
+            "finishedAt": "2026-11-17T11:34:59.539Z",
+            "durationMs": 3550
+          }
+        },
+        {
+          "endpoint": "Browser",
+          "successfulEvents": 5,
+          "resourceIds": [
+            "tf-c73e79e0-a3ef-41e6-9b9d-dd309422ce79",
+            "tf-4f9ec56b-9785-4edc-b984-780d5b64cc64",
+            "tf-b03da136-6be7-4605-a3a2-157508345e1b",
+            "tf-b90a253f-2fe9-416a-94d7-9dfdf0bde06c",
+            "tf-1ab3005e-6988-4c87-9d72-23aae1384afc"
+          ],
+          "example": {
+            "id": "9f80cc98-ec70-4ad8-8736-697b0944b9c6",
+            "endpoint": "Browser",
+            "operation": "verify-intake",
+            "startedAt": "2026-11-17T12:03:04.521Z",
+            "status": "success",
+            "units": 1,
+            "detail": "Investible: inspected rendered public contact page; 0 visible fields ()",
+            "resourceId": "tf-c73e79e0-a3ef-41e6-9b9d-dd309422ce79",
+            "finishedAt": "2026-11-17T12:03:16.558Z",
+            "durationMs": 12037
+          }
+        }
+      ],
+      "verifiedPublicForms": 0,
+      "verifiedPublicDestinations": 3,
+      "verifiedPublicApplicationDestinations": 3,
+      "verifiedDirectContactDestinations": 0,
+      "verifiedLoginDestinations": 0,
+      "verifiedSharedInboxes": 0,
+      "investorPublishedIntroRoutes": 0,
+      "suggestedIntroRoutes": 11,
+      "confirmedRoundLeads": 0,
+      "listedCompanyLeads": 0,
+      "sourcedChequeRanges": 2,
+      "investorsWithoutNamedRoundLead": 12,
+      "unknownCheques": 10,
+      "eligibilitySupported": 3,
+      "eligibilityUnconfirmed": 9,
+      "sourceReplay": {
+        "available": true,
+        "checkedCompanies": 10,
+        "verifiedInvestmentEdges": 36,
+        "failures": []
+      },
+      "pass": true,
+      "failures": []
+    }
+  ],
+  "note": "Structural gates include cached financing replay when private source pages are available. Unknown partner/cheque disclosures and unconfirmed market eligibility remain visible; passing does not establish complete bounty compliance or predict approval."
+}

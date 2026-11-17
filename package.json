@@ -1,0 +1,36 @@
+{
+  "name": "funding-radar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-first investor discovery with TinySet and the live web",
+  "scripts": {
+    "dev": "tsx src/server/index.ts",
+    "build": "vite build && tsc --noEmit && npm run build:server",
+    "build:server": "tsc -p tsconfig.server.json",
+    "start": "node dist/server/index.js --production",
+    "test": "npm run build:server && tsx --test tests/*.test.ts",
+    "demo": "tsx scripts/demo.ts",
+    "check": "tsc --noEmit",
+    "verify:demos": "tsx scripts/check-submission.ts",
+    "build:reviewer": "tsx scripts/build-reviewer.ts"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.2",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "playwright": "^1.56.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2"
+  }
+}

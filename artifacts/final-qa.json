@@ -1,0 +1,120 @@
+{
+  "checkedAt": "2026-11-17T13:31:58.785Z",
+  "modes": [
+    {
+      "name": "live",
+      "cases": [
+        {
+          "country": "United States",
+          "companies": 14,
+          "exports": {
+            "json": {
+              "companies": 14,
+              "investors": 12,
+              "version": "evidence-fit-v2",
+              "bytes": 128181
+            },
+            "csv": {
+              "bytes": 8204,
+              "header": "\"rank\",\"investor\",\"fit_score\",\"eligibility\",\"ranking_policy\",\"companies_backed\",\"investment_source_links\",\"typical_cheque\",\"stages\",\"stage_evidence_basis\",\"investment_leads\",\"contact_routes\",\"ranking_reason\",\"caveats\",\"as_of\",\"tinyset_dataset_id\"\r"
+            }
+          }
+        },
+        {
+          "country": "India",
+          "companies": 12,
+          "exports": {
+            "json": {
+              "companies": 12,
+              "investors": 12,
+              "version": "evidence-fit-v2",
+              "bytes": 133366
+            },
+            "csv": {
+              "bytes": 10023,
+              "header": "\"rank\",\"investor\",\"fit_score\",\"eligibility\",\"ranking_policy\",\"companies_backed\",\"investment_source_links\",\"typical_cheque\",\"stages\",\"stage_evidence_basis\",\"investment_leads\",\"contact_routes\",\"ranking_reason\",\"caveats\",\"as_of\",\"tinyset_dataset_id\"\r"
+            }
+          }
+        },
+        {
+          "country": "Germany",
+          "companies": 10,
+          "exports": {
+            "json": {
+              "companies": 10,
+              "investors": 12,
+              "version": "evidence-fit-v2",
+              "bytes": 126298
+            },
+            "csv": {
+              "bytes": 9870,
+              "header": "\"rank\",\"investor\",\"fit_score\",\"eligibility\",\"ranking_policy\",\"companies_backed\",\"investment_source_links\",\"typical_cheque\",\"stages\",\"stage_evidence_basis\",\"investment_leads\",\"contact_routes\",\"ranking_reason\",\"caveats\",\"as_of\",\"tinyset_dataset_id\"\r"
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "failed": [],
+      "posts": [],
+      "mobileOverflow": false
+    },
+    {
+      "name": "reviewer",
+      "cases": [
+        {
+          "country": "United States",
+          "companies": 14,
+          "exports": {
+            "json": {
+              "companies": 14,
+              "investors": 12,
+              "version": "evidence-fit-v2",
+              "bytes": 128181
+            },
+            "csv": {
+              "bytes": 8204,
+              "header": "\"rank\",\"investor\",\"fit_score\",\"eligibility\",\"ranking_policy\",\"companies_backed\",\"investment_source_links\",\"typical_cheque\",\"stages\",\"stage_evidence_basis\",\"investment_leads\",\"contact_routes\",\"ranking_reason\",\"caveats\",\"as_of\",\"tinyset_dataset_id\"\r"
+            }
+          }
+        },
+        {
+          "country": "India",
+          "companies": 12,
+          "exports": {
+            "json": {
+              "companies": 12,
+              "investors": 12,
+              "version": "evidence-fit-v2",
+              "bytes": 133366
+            },
+            "csv": {
+              "bytes": 10023,
+              "header": "\"rank\",\"investor\",\"fit_score\",\"eligibility\",\"ranking_policy\",\"companies_backed\",\"investment_source_links\",\"typical_cheque\",\"stages\",\"stage_evidence_basis\",\"investment_leads\",\"contact_routes\",\"ranking_reason\",\"caveats\",\"as_of\",\"tinyset_dataset_id\"\r"
+            }
+          }
+        },
+        {
+          "country": "Germany",
+          "companies": 10,
+          "exports": {
+            "json": {
+              "companies": 10,
+              "investors": 12,
+              "version": "evidence-fit-v2",
+              "bytes": 126298
+            },
+            "csv": {
+              "bytes": 9870,
+              "header": "\"rank\",\"investor\",\"fit_score\",\"eligibility\",\"ranking_policy\",\"companies_backed\",\"investment_source_links\",\"typical_cheque\",\"stages\",\"stage_evidence_basis\",\"investment_leads\",\"contact_routes\",\"ranking_reason\",\"caveats\",\"as_of\",\"tinyset_dataset_id\"\r"
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "failed": [],
+      "posts": [],
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

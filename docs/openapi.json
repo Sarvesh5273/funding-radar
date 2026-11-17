@@ -1,0 +1,262 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Funding Radar",
+    "version": "1.0.0",
+    "description": "Evidence-first investor discovery with mandatory TinySet. Unknown facts remain null; fewer than ten verified comparable companies yields partial status."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:3000"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/api/runs": {
+      "post": {
+        "summary": "Start a live TinySet investor research job",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StartupInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Research job accepted"
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Access token required"
+          },
+          "429": {
+            "description": "Concurrency or rate limit"
+          },
+          "503": {
+            "description": "Live research disabled"
+          }
+        }
+      },
+      "get": {
+        "summary": "List saved jobs",
+        "responses": {
+          "200": {
+            "description": "ResearchRun array"
+          }
+        }
+      }
+    },
+    "/api/runs/{id}": {
+      "get": {
+        "summary": "Read job progress and result",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ResearchRun"
+          },
+          "404": {
+            "description": "Job not found"
+          }
+        }
+      }
+    },
+    "/api/runs/{id}/export": {
+      "get": {
+        "summary": "Export JSON or outreach CSV",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "json",
+                "csv"
+              ],
+              "default": "json"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Research result JSON or CSV",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/csv": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/runs/{id}/resume": {
+      "post": {
+        "summary": "Resume original dataset and Agent jobs",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Existing research resumed"
+          },
+          "409": {
+            "description": "Already complete"
+          }
+        }
+      }
+    },
+    "/api/demos": {
+      "get": {
+        "summary": "List genuine saved demo snapshots",
+        "responses": {
+          "200": {
+            "description": "Dated ResearchRun array"
+          }
+        }
+      }
+    },
+    "/api/health": {
+      "get": {
+        "summary": "Read health",
+        "responses": {
+          "200": {
+            "description": "Server status"
+          }
+        }
+      }
+    },
+    "/api/runs/{id}/refresh": {
+      "post": {
+        "summary": "Refresh investor facts using the existing verified TinySet funding snapshot",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Existing research facts are being refreshed"
+          },
+          "404": {
+            "description": "No completed funding result"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Required when server RADAR_ACCESS_TOKEN is configured. TinyFish key is never sent to this API by the client."
+      }
+    },
+    "schemas": {
+      "StartupInput": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "description",
+          "stage",
+          "country"
+        ],
+        "properties": {
+          "description": {
+            "type": "string",
+            "minLength": 12,
+            "maxLength": 600
+          },
+          "stage": {
+            "type": "string",
+            "enum": [
+              "pre-seed",
+              "seed",
+              "series-a",
+              "series-b",
+              "growth"
+            ]
+          },
+          "country": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 80
+          },
+          "targetChequeUsd": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "exclusiveMinimum": 0,
+            "maximum": 1000000000,
+            "default": null
+          },
+          "lookbackMonths": {
+            "type": "integer",
+            "enum": [
+              12,
+              18
+            ],
+            "default": 18
+          },
+          "maxCompanies": {
+            "type": "integer",
+            "minimum": 10,
+            "maximum": 50,
+            "default": 24
+          }
+        }
+      }
+    }
+  }
+}

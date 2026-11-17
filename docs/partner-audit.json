@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-11-17",
+  "purpose": "Bounded audit of public deal-lead attribution for investor/company pairs already present in real Funding Radar reports.",
+  "budget": {
+    "tinyfishSearchQueries": 8,
+    "tinyfishFetchUrls": 7,
+    "nativeSourceOpenUrls": 1,
+    "paidAgentRuns": 0,
+    "paidBrowserSessions": 0
+  },
+  "evidence": [
+    {
+      "id": "parahelp-financing",
+      "url": "https://parahelp.com/blog/announcing-our-series-a-and-seed",
+      "title": "Announcing our Series A and Seed | Parahelp",
+      "publicationDate": "2025-09-11",
+      "quote": "$3.2M Seed round led by Blake Robbins at Hidden Capital and an $18M Series A round led by Jack Altman at Alt Capital."
+    },
+    {
+      "id": "blume-mysa-owner",
+      "url": "https://blume.vc/mysa",
+      "title": "Mysa",
+      "publicationDate": null,
+      "quote": "Investment Lead Ashish Fafadia",
+      "personLink": "https://blume.vc/team/ashish-fafadia"
+    },
+    {
+      "id": "645-risotto-owner",
+      "url": "https://645ventures.com/portfolio/risotto",
+      "title": "Risotto — 645 Ventures Portfolio",
+      "publicationDate": null,
+      "quote": "645 Deal Lead Vardan Gattani",
+      "personLink": "https://645ventures.com/team/vardan-gattani",
+      "investmentYear": "2025"
+    },
+    {
+      "id": "inkeep-financing",
+      "url": "https://inkeep.com/blog/inkeep-funding-announcement",
+      "title": "Inkeep raises $13M so every team can ship AI Agents they trust",
+      "publicationDate": "2025-09-05",
+      "note": "The primary announcement names investor firms but no individual deal lead."
+    },
+    {
+      "id": "base10-team",
+      "url": "https://base10.vc/team",
+      "title": "Team - Base10",
+      "publicationDate": null,
+      "note": "Fetched public page rendered generic team text and no company-specific person attribution."
+    }
+  ],
+  "pairs": [
+    {
+      "investor": "Hidden Capital",
+      "company": "Parahelp",
+      "status": "confirmed-round-lead",
+      "person": "Blake Robbins",
+      "roundStage": "seed",
+      "roundAmount": "$3.2M",
+      "evidenceId": "parahelp-financing",
+      "scope": "round",
+      "caveat": "Use the Seed attribution. The same announcement also describes a separately led Series A."
+    },
+    {
+      "investor": "Blume Ventures",
+      "company": "Mysa",
+      "status": "confirmed-company-investment-lead",
+      "person": "Ashish Fafadia",
+      "evidenceId": "blume-mysa-owner",
+      "scope": "company",
+      "caveat": "Current portfolio owner is explicit. This source does not identify the leader of the January 27, 2026 financing specifically."
+    },
+    {
+      "investor": "645 Ventures",
+      "company": "Risotto",
+      "status": "confirmed-company-deal-lead",
+      "person": "Vardan Gattani",
+      "evidenceId": "645-risotto-owner",
+      "scope": "company",
+      "caveat": "Portfolio page lists investment year 2025. Do not label this as confirmed leadership of the January 27, 2026 financing."
+    },
+    {
+      "investor": "Khosla Ventures",
+      "company": "Inkeep",
+      "status": "individual-lead-undisclosed-in-checked-primary-sources",
+      "person": null,
+      "evidenceId": "inkeep-financing",
+      "scope": null,
+      "caveat": "Generic Khosla partner biographies are insufficient to assign a person to this deal."
+    },
+    {
+      "investor": "Base10 Partners",
+      "company": "Causa Prima",
+      "status": "individual-lead-undisclosed-in-checked-primary-sources",
+      "person": null,
+      "evidenceId": "base10-team",
+      "scope": null,
+      "caveat": "A publicly quoted partner is not automatically a deal lead. No explicit primary company-specific attribution was located within the bounded search."
+    }
+  ],
+  "supplementaryFact": {
+    "investor": "Alt Capital",
+    "company": "Parahelp",
+    "status": "confirmed-round-lead",
+    "person": "Jack Altman",
+    "roundStage": "Series A",
+    "roundAmount": "$18M",
+    "evidenceId": "parahelp-financing",
+    "scope": "round",
+    "caveat": "Supplementary source fact; do not add an investor to a recommendation without the normal financing/fit checks."
+  },
+  "generalizablePatterns": [
+    "Select an actual financing sentence, then match '<stage> round led by <Person> at/of/from <Investor>' with entity boundaries and person-name validation.",
+    "For investor-owned company portfolio pages, require a company-specific title/name and an explicit Investment Lead or Deal Lead heading immediately followed by a linked person.",
+    "Portfolio ownership remains scope company unless the source explicitly identifies the evaluated financing round.",
+    "Quoted partners, board membership, generic team pages and authorship alone do not establish a deal lead."
+  ]
+}
