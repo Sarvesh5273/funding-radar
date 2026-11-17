@@ -27,8 +27,8 @@ Company investment leads and selected-round leads have different scope labels. A
 ## Attach before submitting
 
 - Repository: [Sarvesh5273/funding-radar](https://github.com/Sarvesh5273/funding-radar).
-- Public reviewer: deployment verification is **pending**.
-- Recorded demo: [Funding Radar MP4](../artifacts/funding-radar-demo.mp4), with [UI/export QA results](../artifacts/final-qa.json).
+- Public reviewer: [Funding Radar](https://sarvesh5273.github.io/funding-radar/), verified live on November 17, 2026. All three published JSON/CSV snapshots match the checked artifacts; see [deployment validation](deployment-validation.json).
+- Recorded demo: [Public walkthrough](https://sarvesh5273.github.io/funding-radar/demo.mp4) / [Funding Radar MP4](../artifacts/funding-radar-demo.mp4), with [UI/export QA results](../artifacts/final-qa.json).
 - Three completed live report artifacts: [US AI support](../data/public-runs/95a243df-f62f-4f1c-9957-a833f0bfbef4.json), [India payments](../data/public-runs/730e8414-6b9e-4ff6-b4d2-b8ec851dadcc.json), [Germany battery circularity](../data/public-runs/6220057b-e49c-40a4-8db4-86a060bc07be.json). Final acceptance is recorded in [the validation report](live-demo-validation.json).
 - JSON and CSV examples: [demo log and exports](DEMO.md).
 - LinkedIn post URL tagging TinyFish: **pending**.
@@ -46,12 +46,12 @@ Three startup examples cover US AI support, India B2B payments, and German batte
 
 The result includes linked proof, separate eligibility tiers and reusable JSON/CSV exports. Named deal leads are only shown when the source establishes the person and their scope.
 
-Demo: [ADD DEMO LINK]
+Demo: https://sarvesh5273.github.io/funding-radar/
 Build: https://github.com/Sarvesh5273/funding-radar
 
 [Tag TinyFish using LinkedIn's company mention picker before publishing.]
 
-This draft is not a published post. Add the verified public demo or recording link and use LinkedIn's TinyFish company mention before posting.
+This draft is not a published post. Use LinkedIn's TinyFish company mention before posting.
 
 ## Discord showcase draft
 
@@ -59,10 +59,10 @@ Built **Funding Radar** for the Funding Radar bounty: describe a startup, stage,
 
 TinySet does the comparable-company discovery. Search and Fetch verify the evidence and investor details; Agent resolves ambiguous passages and Browser checks advertised intake destinations. Three dated live reports contain 14, 12 and 10 qualifying worldwide comparables across the US AI-support, India-payments and Germany-battery startup examples. The public reviewer replays them, and the live app/API can research new inputs with a personal server key.
 
-Demo: [ADD LINK]
+Demo: https://sarvesh5273.github.io/funding-radar/
 Build: https://github.com/Sarvesh5273/funding-radar
 
-The three reports have completed. Check the final validation report and add the verified demo URL before publishing this draft.
+The three reports and public reviewer are verified. This draft has not been posted.
 
 ## Remaining disclosure gaps
 
@@ -78,4 +78,4 @@ The supplied Funding Radar exclusive says one winner receives a $50 gift card an
 
 ## Final readiness
 
-The 41-test release suite and final structural/cached-source validation passed for all three completed reports; see `docs/live-demo-validation.json`. Publish the verified reviewer link, complete the required LinkedIn and Discord posts, record their URLs, and submit once through My Claims. The useful-detail gaps above remain subject to the judges' approval criteria. The supplied rulebook says submissions are final.
+The 41-test release suite and final structural/cached-source validation passed for all three completed reports; see `docs/live-demo-validation.json`. The reviewer and repository are published. Complete the required LinkedIn and Discord posts, record their URLs, and submit once through My Claims. The useful-detail gaps above remain subject to the judges' approval criteria. The supplied rulebook says submissions are final.

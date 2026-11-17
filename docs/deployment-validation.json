@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-17T13:37:49.057Z",
+  "url": "https://sarvesh5273.github.io/funding-radar/",
+  "checks": [
+    {
+      "country": "United States",
+      "status": "complete",
+      "companies": 14,
+      "investors": 12,
+      "json": "matched",
+      "csv": "matched"
+    },
+    {
+      "country": "India",
+      "status": "complete",
+      "companies": 12,
+      "investors": 12,
+      "json": "matched",
+      "csv": "matched"
+    },
+    {
+      "country": "Germany",
+      "status": "complete",
+      "companies": 10,
+      "investors": 12,
+      "json": "matched",
+      "csv": "matched"
+    }
+  ],
+  "video": {
+    "status": 200,
+    "type": "video/mp4"
+  },
+  "pass": true
+}

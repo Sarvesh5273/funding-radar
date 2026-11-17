@@ -8,7 +8,7 @@ Built for the TinyFish **Funding Radar** launch bounty. No canned investor datab
 
 Requires Node.js 22.13+ and a **personal** TinyFish API key with TinySet enabled. An organization key cannot use TinySet.
 
-Source: [Sarvesh5273/funding-radar](https://github.com/Sarvesh5273/funding-radar). The public reviewer build displays three genuine, dated research snapshots with evidence and downloads. Run the server app below to research a new startup.
+[Open the reviewer demo](https://sarvesh5273.github.io/funding-radar/) · [Watch the walkthrough](https://sarvesh5273.github.io/funding-radar/demo.mp4) · [Source repository](https://github.com/Sarvesh5273/funding-radar). The public reviewer build displays three genuine, dated research snapshots with evidence and downloads. Run the server app below to research a new startup.
 
 ```sh
 npm ci
